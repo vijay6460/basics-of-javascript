@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics and Datatypes</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javscript" src="./script.js"></script>
+</head>
+
+<body>
+    <!-- <p>Javascript is used to build a Dynamic pages</p>
+    <p>Dynamic pages which is taken from user and perform some result to us </p>
+    <p>Highly Interactive page</p>
+    <p>Java script is Scripting Language</p>
+    <p>scripting Languages can be a programming languages bcz it containes variables and keywords functions </p>
+    <p>But programming languages are not scripting languages</p>
+    <p>Interpreter (No need of any platforms like javascript)-- which dont need of compiler which automtically make our system understand </p>
+    <p>We dont need to save your code and they are independent </p>
+    <p>C language it is dependent on others</p>
+    <h2>Storing the  data </h2>
+    <h3>Performing the operation on that data and displaying the result</h3>
+
+<p>
+    <span>There are two ways to see the output </span>
+    <span> IDE and Browser</span>
+</p>
+<h2>After the all the html code we write the js code in body tag</h2>
+<h2>Storing a value in the js</h2>
+<p>Variable is like a identifier to store a value in javascript</p>
+<p>var Keyword is used to store the value</p>
+<p>Var stands for Variable</p>
+<p>Rules to need to follow to store a variable value</p>
+<p>Variable name starts with always letters</p>
+<p>After a letter we can use a number</p>
+<p>Special symbols are not accepted except $ and _</p>
+<p>Keywords cant be used as a variable name </p>
+<h1>Variable name are case senstive</h1> -->
+
+    <script>
+        // var k;
+        // var k='';
+        // var k=10;
+        // console.log(k)
+        // console.log("Hello world")
+        var a = 10;// By using = we are storing a variable in a
+        console.log("The number is", a);
+        var b = 'Hello world how are you'
+        console.log(b)
+
+        // There are 8 datatypes in js
+        // Primative(Primary) and non-primative(secondary) data types
+        // Primative data types
+        // 1. Number------1,2,3,4
+        // 2. string ------"Hello world How are you"
+        // 3. Null---------''(Didn't assin any value but in future we can assign)
+        // 4. Boolean-------true or flase
+        // 5. Undefined------a variable which is not carry any value
+        // 6. Biginit------Vary big number (545666548821122335545)
+        // 7.Symbol-------Making a unique value
+
+        // Secondary data type
+        // Object is combiation of primary data types or key value pair
+
+        var king = 8547;
+        var pro = 'Chand';
+        // var Pro_stack='';
+        var pr = true;
+        var pr1 = false;
+        var nu = null;
+        var unde;
+        console.log(king)
+        console.log(pro)
+        // console.log(pro_stack)
+        console.log(pr)
+        console.log(pr1)
+        console.log(nu)
+        console.log(unde)
+
+        var ab = 8754, b = 'string', d, f = false, t = true, n = null, u = undefined;
+        console.log(ab)
+        console.log(b)
+        console.log(d)
+        console.log(f)
+        console.log(t)
+        console.log(n)
+        console.log(u)
+
+        console.log(typeof (a))//number
+        console.log(typeof (ab))//number
+        console.log(typeof (b))//string
+        console.log(typeof (d))//undefined
+        console.log(typeof (f))//boolean
+        console.log(typeof (t))//true
+        console.log(typeof (n))//Object
+        console.log(typeof (u))//undefined
+
+        //Big int
+        // Bit int we have to a letter n in the last of the number
+        var some1 = 854566945122000211232854812252254445666;
+        var some = 854566945122000211232854812252254445666n;
+        console.log(some1)
+        console.log(some)
+        console.log(typeof (some1))
+        console.log(typeof (some))
+
+        // Giving a negative value
+        var some2 = -854566945122000211232854812252254445666n;
+        console.log(some2)
+        console.log(typeof (some2))
+
+        // fractional values
+        var some2 = 854566945122000211232854812252254445666n;
+
+
+        //null and undefined
+        // based on the operation the null is changed to object
+        var nb = null;
+        console.log(nb)
+        console.log(undefined + 1)//NaN
+        console.log(undefined + true)//NaN
+        console.log(null + true)//1
+        console.log(null + false)//0
+        console.log(undefined + 'hello')// Concentation
+        console.log(nb + 1)// we will get integer value
+        console.log(nb + "hello")//concentation 
+        console.log(typeof (nb))
+
+
+        //Object
+        // It is a combination of primary data types
+
+        var obj = {
+            name: 'vijay', loc: 'bang'
+        }
+        console.log(obj)
+        console.log(obj.name)
+        console.log(obj.loc)
+
+
+        //Object inside object
+
+        var obj1 = {
+            name: 'rahul', age1: 24, loc: 'bang',
+            obj2: {
+                name: 'sonia', age2: 25, loc: 'london'
+            }
+        }
+        console.log("this is", obj1.name)
+        console.log(obj1)
+        console.log(obj1.name)
+        console.log(obj1.obj2)
+        console.log(obj1.obj2.age2)//25
+        console.log(obj1.age1)//24
+        console.log(obj1.age2)//undefined
+
+
+        // String Literrals in js
+
+var some=25;
+var fun=35;
+var fun2='Hello sample text'
+console.log(`for ${some} value is ${fun}  is ${fun2}`)
+
+
+
+    </script>
+
+</body>
+
+</html>

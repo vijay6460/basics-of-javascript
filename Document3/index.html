@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.col{
+    color: red;
+}
+
+.some{
+    background-color: red;
+}
+
+.kim{
+    color: green;
+    background-color: black;
+}
+
+</style>
+</head>
+
+<body>
+    <!-- This is for document.getelementbyId this can be checked in the concole output by using the id-->
+    <!-- <input type="text" id="one" placeholder="Enter your text">
+    <input type="text" id="four" placeholder="Enter your name">
+    <button onclick="fun()">Click</button>
+ 
+ -->
+    <!--This is for the document.getelementbyclassname-->
+    <p id="den">This is 1st paragraph</p>
+    <p class="one">This is 2nd paragraph</p>
+    <p class="one">This is 3rd paragraph</p>
+    <h1 id="a">Color is changed using the javascript using the set attribute </h1>
+    <button onclick="fun()">Click</button>
+
+    <!--Checking by TagName-->
+    <ul id="one">
+        <li>cycle</li>
+        <li>bike</li>
+        <li>car</li>
+        <li>flight</li>
+    </ul>
+    <button onclick="fur()">for tag name</button>
+
+
+    <h1 id="sample">Checking for the setAttribute by using the getelementbyId the css properties can be given to it using the javascript</h1>
+<button onclick="pink()">Checking for the setAttribute</button>
+
+    <!--This is for creating the input field using the javascript-->
+    <!-- <button onclick="input()">Creating the input field</button> -->
+<!-- <p onmouseover="input()">Hello this is for the input</p> -->
+    <!--It is displayed in the array and the array can be used by using the indexing the array elements-->
+
+
+    <!--This is for creating the SetAttribute field-->
+    <!-- <input type="text" id="demo">
+    <button onclick="pro()">For setAttribute</button> -->
+    <script>
+        /*   function fun() {
+              var s = document.getElementById("one").value
+              var k = document.getElementById("four").value
+              console.log(s, k)
+              //   console.log(k)
+          } */
+
+        /* function fun() {
+            var s = document.getElementsByClassName("one")
+            console.log(s)// we can see that in array
+            console.log(s[1].innerHTML)// we can check the inner content inside the tags
+            for (i = 0; i <= s.length - 1; i++) {
+                console.log(s[i].innerHTML)// using the for loop we can get all the elements inside the array
+            }
+        }
+ */
+        // Checking by tagname
+/* 
+        function fur() {
+            var p = document.getElementsByTagName("li")
+            console.log(p)
+            console.log(p[0].innerHTML)
+            for (k = 0; k <= p.length - 1; k++) {
+                console.log(p[k].innerHTML)
+            }
+        } */
+
+
+        // creating the input field using the Javascript
+       /*  function input() {
+            var a = document.createElement("input")
+            document.body.appendChild(a) 
+            //This is for the body only not for the p tags and the any other tags
+        }*/
+
+        //SetAttribute in Javascript
+        // Done by using the styling
+       /*  function pro(){
+            var m=document.getElementById("demo");
+            m.setAttribute("type","number")
+
+        }
+        function fun(){
+            var j=document.getElementById("den")
+            j.setAttribute("class","col")
+        }
+
+        function fun(){
+            var d=document.getElementById("a")
+            d.setAttribute("class","some")
+        } */
+
+
+        function pink(){
+            var z=document.getElementById("sample")
+            z.setAttribute("class","kim")
+        }
+
+       
+
+
+
+
+
+    </script>
+</body>
+
+</html>
